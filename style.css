@@ -550,6 +550,7 @@ footer span a:hover {
 
     .about .about-content .right {
         flex: 100%;
+        text-align: center;
     }
 
     .skills .skills-content .column,
@@ -564,8 +565,19 @@ footer span a:hover {
 }
 
 @media (max-width: 690px) {
+    .home {
+        display: flex;
+        background: url(image/banner-mobile.jpg) no-repeat;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+    }
+    .contact .contact-content .column{
+        text-align: center;
+    }
+
     .home .home-content .text-2 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .home .home-content .text-3 {
