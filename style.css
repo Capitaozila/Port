@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -97,7 +99,8 @@ html {
 }
 
 .home .home-content .text-2 {
-    font-size: 75px;
+    font-family: "Bungee", sans-serif;
+    font-size: 55px;
     font-weight: 500;
     margin-left: -3px;
 }
