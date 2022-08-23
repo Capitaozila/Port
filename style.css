@@ -16,7 +16,8 @@ html {
 }
 
 .special-p {
-    padding: 5px;
+    line-height: 24px;
+    text-align: center;
 }
 
 /*  navbar   inicio*/
