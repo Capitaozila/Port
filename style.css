@@ -15,11 +15,8 @@ html {
     margin: auto;
 }
 
-p#special-p {
+.special-p {
     padding: 5px;
-}
-p#special-p2 {
-    line-height: 24px;
 }
 
 /*  navbar   inicio*/
@@ -137,6 +134,7 @@ p#special-p2 {
     cursor: pointer;
     display: none;
 }
+
 .scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
@@ -578,9 +576,27 @@ footer span a:hover {
 @media (max-width: 500px) {
     .home .home-content .text-2 {
         font-size: 50px;
+        padding: 8px 0;
     }
 
     .home .home-content .text-3 {
         font-size: 27px;
     }
+
+    .home {
+        display: flex;
+        background: url(image/banner-mobile.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        min-height: 500px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .max-width {
+        max-width: 900px;
+        padding: 0 30px;
+        text-align: center;
+    }
+
 }
