@@ -26,8 +26,8 @@ html {
 .navbar {
     position: fixed;
     width: 100%;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    padding: 30px 200px;
+    font-family: "Bungee", sans-serif;
     z-index: 999;
     transition: all 0.3s ease;
 }
@@ -46,12 +46,11 @@ html {
 .navbar .logo a {
     color: #fbf8f3;
     font-size: 35px;
-    font-weight: 500;
 }
 
 .navbar .logo a span {
     color: #EE1C25;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .navbar.sticky .logo a span {
@@ -106,6 +105,7 @@ html {
 .home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .home .home-content .text-3 span {
@@ -150,7 +150,7 @@ section {
 }
 
 section .title {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Bungee", sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -574,6 +574,18 @@ footer span a:hover {
     .contact .contact-content .column {
         text-align: center;
     }
+
+    .home .home-content .text-2 {
+        font-size: 40px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -593,7 +605,7 @@ footer span a:hover {
         height: 100vh;
         color: #fff;
         min-height: 500px;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: "Bungee", sans-serif;
     }
 
     .max-width {
