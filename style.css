@@ -100,9 +100,7 @@ html {
 
 .home .home-content .text-2 {
     font-family: "Bungee", sans-serif;
-    font-size: 55px;
-    font-weight: 500;
-    margin-left: -3px;
+    font-size: 35px;
 }
 
 .home .home-content .text-3 {
@@ -575,18 +573,6 @@ footer span a:hover {
 
     .contact .contact-content .column {
         text-align: center;
-    }
-
-    .home .home-content .text-2 {
-        font-size: 40px;
-    }
-
-    .home .home-content .text-3 {
-        font-size: 32px;
-    }
-
-    .home .home-content a {
-        font-size: 20px;
     }
 }
 
