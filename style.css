@@ -279,7 +279,7 @@ section .title::after {
 .skills .skills-content .left .text {
     font-size: 25px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #fff;
 }
 
@@ -361,14 +361,12 @@ section .title::after {
 .skills .skills-content .right .matematica::before {
     width: 70%;
 }
-
-.skils .skils-content .right .fisica::before {
+.skills .skills-content .right .fisic::before {
     width: 70%;
 }
-.skils .skils-content .right .circuito::before {
+.skills .skills-content .right .circuito::before {
     width: 90%;
 }
-
 
 .title::after {
     content: "Especializada";
