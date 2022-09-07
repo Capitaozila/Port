@@ -18,7 +18,7 @@ $(document).ready(function () {
         strings: ["Designer", "Programador", "Game Maker"], typeSpeed: 80, backSpeed: 30, loop: true
     });
     new Typed(".typing-2", {
-        strings: ["Junior", "Front-end", "de jogos."], typeSpeed: 20, backSpeed: 10, loop: false
+        strings: ["Junior", "Front-end", "de jogos"], typeSpeed: 80, backSpeed: 30, loop: true
     });
     $('.carousel').owlCarousel({
         margin: 20, loop: true, autoplayTimeOut: 2000, autoplayHoverPauser: true, responsive: {
