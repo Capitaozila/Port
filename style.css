@@ -156,7 +156,7 @@ h2::selection {
     color: black;
     font-size: 25px;
     padding: 12px 36px;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 6px;
     border: 2px solid #556ff7;
 }
@@ -540,17 +540,17 @@ footer span a:hover {
 
 @media (max-width: 500px) {
     .home .home-content .text-2 {
-        font-size: 50px;
-        padding: 8px 0;
+        font-size: 30px;
+        padding: 0;
     }
 
     .home .home-content .text-3 {
-        font-size: 27px;
+        font-size: 30px;
     }
 
     .home {
         display: flex;
-        background: url(image/banner-mobile.jpg) no-repeat;
+        background: url(image/banner-mobile.jpg) no-repeat center;
         background-size: cover;
         height: 100vh;
         color: #fff;
@@ -560,8 +560,31 @@ footer span a:hover {
 
     .max-width {
         max-width: 900px;
-        padding: 0 30px;
         text-align: center;
+    }
+
+    .special-p {
+        line-height: 30px;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        padding: 1px 105px;
+        font-family: "Bungee", sans-serif;
+        transition: all 0.3s ease;
+    }
+
+    .navbar.sticky {
+        background: #232323;
+        padding: 15px 0;
+    }
+
+    footer span {
+        tab-size: 20px;
     }
 
 }
