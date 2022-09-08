@@ -7,25 +7,12 @@
 }
 
 ::selection {
-    background: #ff4656db;
+    background: #556ff7;
     color: #fff;
 }
 
 html {
     font-size: 62.5%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "poppins", sans-serif, system-ui, -apple-system;
-    font-size: 1.6rem;
-    background: #171d20;
-    color: #fff;
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    cursor: url(assets/cursors/panda.png), auto !important;
 }
 
 h3 {
@@ -35,7 +22,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #ff4656;
+    color: #556ff7;
 }
 
 .card {
@@ -70,7 +57,7 @@ a {
     position: absolute;
     inset: 0;
     width: 100%;
-    background: #ff4656d8;
+    background: #fff;
     mix-blend-mode: multiply;
     transform: translateX(-120%) skewX(-10deg);
     transition: transform 0.3s ease-out;
@@ -88,7 +75,7 @@ a {
     text-transform: uppercase;
 }
 
-.card-footer span {
+.card-footer span#tCard {
     font-weight: bold;
     font-size: 1.2rem;
     color: #5a6469;
@@ -106,7 +93,7 @@ a {
     align-items: center;
 }
 
-.read-more span {
+.read-more span#tCard {
     display: block;
     margin-left: 0.4rem;
     font-size: 1.5rem;
@@ -114,7 +101,7 @@ a {
 }
 
 .card:hover .read-more {
-    color: rgb(56, 62, 58);
+    color: #556ff7;
 }
 
 .card:hover .read-more span {
@@ -126,12 +113,12 @@ a {
 }
 
 .card:hover .card-footer {
-    background: #ffffff;
-    color: rgb(56, 62, 58);
+    background: rgb(56, 62, 58);
+    color: #fff;
 }
 
 .card:hover span {
-    color: #ff4656;
+    color: #556ff7;
 }
 
 .card::before {
@@ -141,7 +128,7 @@ a {
     height: 5px;
     width: 100%;
     background-size: 200%;
-    background: linear-gradient(to right, #ff4656 50%, rgb(56, 62, 58) 50%) no-repeat 100%;
+    background: linear-gradient(to right, #556ff7 50%, rgb(56, 62, 58) 50%) no-repeat 100%;
     bottom: 0;
     left: 0;
     z-index: 9;
