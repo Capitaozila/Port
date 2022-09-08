@@ -48,6 +48,18 @@ img#cNarga {
     margin: auto;
 }
 
+/*  tratamento de seleção de texto*/
+
+::selection {
+    background: #556ff7;
+    color: #fff;
+}
+
+h2::selection {
+    background: #ff9514;
+    color: #fff;
+}
+
 /*  navbar   inicio*/
 .navbar {
     position: fixed;
