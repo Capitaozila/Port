@@ -18,23 +18,25 @@ html {
 }
 
 .special-p {
-    line-height: 24px;
+    line-height: 30px;
+    font-size: 20px;
     text-align: center;
     color: #fff;
 }
+
 /* scroll bar*/
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
     height: 8px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #556ff7;
     border-radius: 50px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: #232323;
     border-radius: 0;
 }
@@ -102,7 +104,7 @@ h2::selection {
 
 .navbar .menu li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
@@ -132,12 +134,12 @@ h2::selection {
 }
 
 .home .home-content .text-1 {
-    font-size: 27px;
+    font-size: 40px;
 }
 
 .home .home-content .text-2 {
     font-family: "Bungee", sans-serif;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .home .home-content .text-3 {
@@ -154,7 +156,7 @@ h2::selection {
     display: inline-block;
     background: #556ff7;
     color: black;
-    font-size: 25px;
+    font-size: 30px;
     padding: 12px 36px;
     margin-top: 30px;
     border-radius: 6px;
@@ -164,21 +166,6 @@ h2::selection {
 .home .home-content a:hover {
     color: #556ff7;
     background: none;
-}
-
-/*  Menu  Mobile  */
-.menu-btn {
-    color: #fbf8f3;
-    font-size: 26px;
-    cursor: pointer;
-    display: none;
-}
-
-.scroll-up-btn.show {
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-
 }
 
 /*  todos os codigos similares  */
@@ -291,6 +278,7 @@ section .title::after {
 .projetos .title::after {
     content: "Já feitos";
 }
+
 /*  sessão especialidades  */
 .skills .title::after {
     content: "Aprendendo";
@@ -385,15 +373,19 @@ section .title::after {
 .skills .skills-content .right .matematica::before {
     width: 70%;
 }
+
 .skills .skills-content .right .fisic::before {
     width: 70%;
 }
+
 .skills .skills-content .right .circuito::before {
     width: 90%;
 }
+
 .skills .skills-content .right .ingles::before {
     width: 60%;
 }
+
 .skills .skills-content .right .python::before {
     width: 50%;
 }
@@ -401,6 +393,7 @@ section .title::after {
 /*  sessão footer  */
 footer {
     background: #111;
+    font-size: 16px;
     padding: 20px 23px;
     color: #fff;
     text-align: center;

@@ -15,10 +15,10 @@ $(document).ready(function () {
         $('html').animate({scrollTop: 0});
     });
     new Typed(".typing", {
-        strings: ["Designer", "Programador", "Game Maker"], typeSpeed: 80, backSpeed: 30, loop: true
+        strings: ["Designer", "Programador", "Game Maker"], typeSpeed: 80, backSpeed: 30, loop: false
     });
     new Typed(".typing-2", {
-        strings: ["Junior", "Front-end", "de jogos"], typeSpeed: 80, backSpeed: 30, loop: true
+        strings: ["Junior", "Front-end", "de jogos"], typeSpeed: 80, backSpeed: 30, loop: false
     });
     $('.carousel').owlCarousel({
         margin: 20, loop: true, autoplayTimeOut: 2000, autoplayHoverPauser: true, responsive: {
