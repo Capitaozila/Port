@@ -121,7 +121,7 @@ h2::selection {
 /*  Home   inicio  */
 .home {
     display: flex;
-    background: url(image/banner.png) no-repeat;
+    background: url(../image/banner.png) no-repeat;
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -508,7 +508,7 @@ footer span a:hover {
 @media (max-width: 690px) {
     .home {
         display: flex;
-        background: url(image/banner.png) no-repeat;
+        background: url(../image/banner.png) no-repeat;
         color: #fff;
         text-align: center;
     }
@@ -554,7 +554,7 @@ footer span a:hover {
 
     .home {
         display: flex;
-        background: url(image/banner-mobile.jpg) no-repeat center;
+        background: url(../image/banner-mobile.jpg) no-repeat center;
         background-size: cover;
         height: 100vh;
         color: #fff;
