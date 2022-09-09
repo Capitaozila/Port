@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"/>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <link href="css/calculadora.css" rel="stylesheet"/>
-    <title>Interactive Card | HTML & CSS</title>
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="css/calculadora.css" rel="stylesheet"/>
+  <title>Calculadora | HTML & CSS</title>
 </head>
-<body>
-<div class="card">
-    <div class="image-container">
-        <img alt="article" src="image/calculator-icon.png"/>
+<body class="inicio">
+  <section>
+    <div class="container">
+      <div id="display"></div>
+      <div class="buttons">
+        <button class="button">C</button>
+        <button class="button">/</button>
+        <button class="button">*</button>
+        <button class="button">&larr;</button>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button">-</button>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button">+</button>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">.</button>
+        <button class="button">(</button>
+        <button class="button">0</button>
+        <button class="button">)</button>
+        <div id="equal" class="button">=</div>
+      </div>
     </div>
-    <div class="card-footer">
-        <span>agora</span>
-        <h3>Calculadora</h3>
-        <p>
-            Feita com Javascrypt, css e html puro. A calculadora consegue fazer operações matemáticas básicas, como soma, subtração, multiplicação e divisão. Também consegue fazer operações com números decimais. A calculadora também possui um botão de limpar, que limpa o display da calculadora. Teste a calculadora clicando no botão abaixo.
-        </p>
-        <a class="read-more" href="#">Testar<span>&rarr;</span> </a>
-    </div>
-</div>
+  </section>
+  <script src="calc.js"></script>
+<script src="calc.js"></script>
 </body>
 </html>
