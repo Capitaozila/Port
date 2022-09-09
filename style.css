@@ -508,22 +508,29 @@ footer span a:hover {
 @media (max-width: 690px) {
     .home {
         display: flex;
-        background: url(image/banner-mobile.jpg) no-repeat;
-        background-size: cover;
+        background: url(image/banner.png) no-repeat;
         color: #fff;
         text-align: center;
+    }
+
+    .navbar .menu li a {
+        display: none;
     }
 
     .projetos .projetos-content .column {
         text-align: center;
     }
 
-    .home .home-content .text-2 {
+    .home .home-content .text-1 {
         font-size: 40px;
     }
 
+    .home .home-content .text-2 {
+        font-size: 30px;
+    }
+
     .home .home-content .text-3 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .home .home-content a {
@@ -535,6 +542,10 @@ footer span a:hover {
     .home .home-content .text-2 {
         font-size: 30px;
         padding: 0;
+    }
+
+    .ul menu {
+        display: none;
     }
 
     .home .home-content .text-3 {
