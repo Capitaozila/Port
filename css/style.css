@@ -374,7 +374,7 @@ section .title::after {
 }
 
 .skills .skills-content .right .ingles::before {
-    width: 60%;
+    width: 50%;
 }
 
 .skills .skills-content .right .python::before {
