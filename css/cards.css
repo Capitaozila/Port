@@ -32,7 +32,6 @@ a {
     position: relative;
     margin: auto;
     overflow: hidden;
-    cursor: url(assets/cursors/hover-panda.png), pointer !important;
 }
 
 .card .image-container {
@@ -76,7 +75,7 @@ a {
     text-transform: uppercase;
 }
 
-.card-footer span#tCard {
+.card-footer span#tCard1 {
     font-weight: bold;
     font-size: 1.2rem;
     color: #5a6469;
@@ -94,7 +93,7 @@ a {
     align-items: center;
 }
 
-.read-more span#tCard {
+.read-more span#tCard1 {
     display: block;
     margin-left: 0.4rem;
     font-size: 1.5rem;

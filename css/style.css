@@ -418,6 +418,12 @@ footer span a:hover {
     .navbar .max-width {
         padding: 0 50px;
     }
+
+    .navbar .max-width .menu ul {
+        display: none;
+        color: green;
+        background-color: green;
+    }
 }
 
 @media (max-width: 947px) {
@@ -504,6 +510,15 @@ footer span a:hover {
         text-align: center;
     }
 
+    .navbar {
+        max-width: 100%;
+        padding: 20px 176px;
+    }
+
+    .navbar.sticky {
+        padding: 20px 175px;
+    }
+
     .navbar .menu li a {
         display: none;
     }
@@ -580,6 +595,38 @@ footer span a:hover {
 
     footer span {
         tab-size: 20px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 20px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 20px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+    }
+
+    .navbar {
+        padding: 1px 50px;
+    }
+
+    .navbar.sticky {
+        padding: 15px 0;
+    }
+
+    .about .title::after {
+        padding: 0 30px;
+        font-size: 18px;
     }
 
 }
