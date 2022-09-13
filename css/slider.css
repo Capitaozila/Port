@@ -19,3 +19,30 @@
     margin: auto;
     vertical-align: top;
 }
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) {
+    left: 10px;
+}
+
+.slider li:nth-child(2) {
+    left: 40px;
+}
+
+.slider li:nth-child(3) {
+    left: 70px;
+}
