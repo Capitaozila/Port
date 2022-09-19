@@ -25,6 +25,14 @@ a {
     color: #556ff7;
 }
 
+.informacao {
+    padding: 4px 0 4px 0;
+}
+
+.tempo {
+    padding: 4px 0 4px 0;
+}
+
 .card {
     max-width: 350px;
     background: #1e2529;
@@ -75,7 +83,7 @@ a {
     text-transform: uppercase;
 }
 
-.card-footer span#tCard {
+.card-footer span {
     font-weight: bold;
     font-size: 1.2rem;
     color: #5a6469;
@@ -93,7 +101,7 @@ a {
     align-items: center;
 }
 
-.read-more span#tCard {
+.read-more {
     display: block;
     margin-left: 0.4rem;
     font-size: 1.5rem;
