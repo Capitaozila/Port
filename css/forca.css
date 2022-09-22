@@ -7,9 +7,10 @@
     box-sizing: border-box;
 }
 
-#imagem {
-    height: 272px;
+#imagem{
     background-image: url("../image/img_forca/forca.png");
+    width: 234px;
+    height: 272px;
     background-repeat: no-repeat;
 }
 
@@ -21,7 +22,28 @@ body {
     margin-top: 10px;
 }
 
-.container {
+.container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     flex-direction: column;
+}
+
+#palavra-secreta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: lem;
+    margin-top: 30px;
+}
+
+.letras {
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid #8b0086;
+    color: white;
+    padding: 2px;
+    margin: 0 2px 0 2px;
 }
