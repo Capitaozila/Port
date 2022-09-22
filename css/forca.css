@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +8,20 @@
 }
 
 #imagem {
-    with: 234px;
     height: 272px;
     background-image: url("../image/img_forca/forca.png");
     background-repeat: no-repeat;
+}
+
+body {
+    background-color: orange;
+    font-family: 'Bungee', cursive;
+    width: 100%;
+    height: 90vh;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
