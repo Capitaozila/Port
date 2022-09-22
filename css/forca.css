@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#imagem {
+    with: 100px;
+    height: 600px;
+    background-image: url("../image/img_forca/forca.png");
+    background-repeat: no-repeat;
+}
