@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-#imagem{
+#imagem {
     background-image: url("../image/img_forca/forca.png");
     width: 234px;
     height: 272px;
@@ -22,7 +22,7 @@ body {
     margin-top: 10px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: lem;
+    font-size: 1em;
     margin-top: 30px;
 }
 
@@ -53,8 +53,8 @@ body {
 }
 
 .teclas button {
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 21px;
     margin: 4px;
     cursor: pointer;
     box-shadow: 0 2px 8px dimgrey;
@@ -71,4 +71,84 @@ body {
     margin-top: 30px;
     font-size: 1.2em;
     color: #8b0086;
+}
+
+/* aplicando media scren */
+
+@media screen and (min-width: 321px) {
+
+    .teclas button {
+        font-size: 0.8em;
+    }
+
+    #categoria {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 376px) {
+
+    .teclas button {
+        width: 26px;
+        height: 26px;
+        margin: 4px;
+    }
+
+    #categoria {
+        font-size: 1.5em;
+    }
+
+    .letras {
+        width: 18px;
+
+    }
+
+    #palavra-secreta {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 426px) {
+
+    .teclas button {
+        width: 32px;
+        height: 32px;
+        margin: 4px;
+    }
+
+    #categoria {
+        font-size: 1.5em;
+    }
+
+    .letras {
+        width: 20px;
+
+    }
+
+    #palavra-secreta {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .teclas button {
+        width: 64px;
+        height: 64px;
+        margin: 4px;
+        font-size: 2em;
+    }
+
+    #categoria {
+        font-size: 2.5em;
+    }
+
+    .letras {
+        width: 32px;
+
+    }
+
+    #palavra-secreta {
+        font-size: 2em;
+    }
 }
