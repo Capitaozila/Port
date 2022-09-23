@@ -1,3 +1,7 @@
+let palavraSecretaCategoria;
+let palavraSecretaSorteada;
+
+
 const palavras = [palavra001 = {
     nome: "IRLANDA", categoria: "LUGAR"
 }, palavra002 = {
@@ -225,8 +229,13 @@ const palavras = [palavra001 = {
 
 ]
 
-criarPalavraSecreta()
+criarPalavraSecreta();
 function criarPalavraSecreta() {
     const indexpalavra = parseInt(Math.random() * palavras.length)
-    console.log(indexpalavra)
+
+    palavraSecretaSorteada = palavras[indexpalavra].nome;
+    palavraSecretaCategoria = palavras[indexpalavra].categoria;
+    console.log(palavraSecretaSorteada);
+    console.log(palavraSecretaCategoria);
 }
+
