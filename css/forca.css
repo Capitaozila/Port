@@ -58,7 +58,7 @@ body {
     margin: 4px;
     cursor: pointer;
     box-shadow: 0 2px 8px dimgrey;
-    border-radius: 5px;
+    border-radius: 50px;
     border: 1px solid dimgray;
     color: #8b0086;
 }
