@@ -1,7 +1,7 @@
+let tentativas = 6;
 let listaDinamica = [];
 let palavraSecretaCategoria;
 let palavraSecretaSorteada;
-
 
 const palavras = [palavra001 = {
     nome: "IRLANDA", categoria: "LUGAR"
@@ -259,7 +259,13 @@ function montarPalavraNaTela() {
     }
 }
 
-verificarLetraEscolhida();
 function verificarLetraEscolhida(letra) {
+    if (tentativas > 0){
+        mudarStyleLetra("tecla-" + letra);
+    }
+}
 
+function mudarStyleLetra(tecla) {
+    document.getElementById(tecla).style.backgroundColor = "#c71585";
+    document.getElementById(tecla).style.color = "#fff";
 }
