@@ -258,3 +258,8 @@ function montarPalavraNaTela() {
         }
     }
 }
+
+verificarLetraEscolhida();
+function verificarLetraEscolhida(letra) {
+
+}
