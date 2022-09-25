@@ -264,6 +264,7 @@ function verificarLetraEscolhida(letra) {
     if (tentativas > 0) {
         mudarStyleLetra("tecla-" + letra);
         comparaLista(letra);
+        montarPalavraNaTela();
     }
 }
 
@@ -282,5 +283,39 @@ function comparaLista(letra) {
                 listaDinamica[i] = letra;
             }
         }
+    }
+
+    let vitoria = true;
+    for (let i = 0; i < palavraSecretaSorteada.length; i++) {
+        if (palavraSecretaSorteada[i] !== listaDinamica[i]) {
+            vitoria = false;
+        }
+    }
+
+    if (vitoria === true) {
+        tentativas = 0;
+    }
+}
+
+function carregaImagemForca() {
+    switch (tentativas) {
+        case 5:
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_1.png')";
+            break;
+        case 4:
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_2.png')";
+            break;
+        case 3:
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_3.png')";
+            break;
+        case 2:
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_4.png')";
+            break;
+        case 1:
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_5.png')";
+            break;
+        case 0:
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_6.png')";
+            break;
     }
 }
