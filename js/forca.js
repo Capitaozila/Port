@@ -277,6 +277,7 @@ function comparaLista(letra) {
     const position = palavraSecretaSorteada.indexOf(letra);
     if (position < 0) {
         tentativas--;
+        carregaImagemForca();
     } else {
         for (let i = 0; i < palavraSecretaSorteada.length; i++) {
             if (palavraSecretaSorteada[i] === letra) {
@@ -300,22 +301,25 @@ function comparaLista(letra) {
 function carregaImagemForca() {
     switch (tentativas) {
         case 5:
-            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_1.png')";
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca01.png')";
             break;
         case 4:
-            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_2.png')";
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca02.png')";
             break;
         case 3:
-            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_3.png')";
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca03.png')";
             break;
         case 2:
-            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_4.png')";
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca04.png')";
             break;
         case 1:
-            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_5.png')";
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca05.png')";
             break;
         case 0:
-            document.getElementById("imagem").style.background = "url('../image/img_forca/forca_6.png')";
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca06.png')";
+            break;
+        default:
+            document.getElementById("imagem").style.background = "url('../image/img_forca/forca.png')";
             break;
     }
 }
