@@ -35,6 +35,7 @@ a {
 
 .card {
     max-width: 350px;
+    height: 700px;
     background: #1e2529;
     border: 1px solid #343637;
     position: relative;
@@ -44,7 +45,7 @@ a {
 
 .card .image-container {
     width: 100%;
-    height: 170px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     transition: all 0.2s;
