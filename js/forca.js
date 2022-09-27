@@ -26,12 +26,12 @@ const palavras = [palavra001 = {
     },
 
     palavra009 = {
-        nome: "SÃOPAULO", categoria: "LUGAR"
+        nome: "SÃO PAULO", categoria: "LUGAR"
 
     },
 
     palavra010 = {
-        nome: "RIODEJANEIRO", categoria: "LUGAR"
+        nome: "RIO DE JANEIRO", categoria: "LUGAR"
     }, palavra011 = {
         nome: "BRASILIA", categoria: "LUGAR"
     },
@@ -225,6 +225,30 @@ const palavras = [palavra001 = {
 
     palavra060 = {
         nome: "elefante", categoria: "ANIMAL"
+    },
+
+    palavra061 = {
+        nome: "HOMEM ARANHA", categoria: "PERSONAGEM"
+    },
+
+    palavra062 = {
+        nome: "HOMEM DE FERRO", categoria: "PERSONAGEM"
+    },
+
+    palavra063 = {
+        nome: "CAPITAO AMERICA", categoria: "PERSONAGEM"
+    },
+
+    palavra064 = {
+        nome: "HULK", categoria: "PERSONAGEM"
+    },
+
+    palavra065 = {
+        nome: "THOR", categoria: "PERSONAGEM"
+    },
+
+    palavra066 = {
+        nome: "VIUVA NEGRA", categoria: "PERSONAGEM"
     }
 
 
@@ -252,10 +276,20 @@ function montarPalavraNaTela() {
 
     for (let i = 0; i < palavraSecretaSorteada.length; i++) {
         if (listaDinamica[i] === undefined) {
-            listaDinamica[i] = "&nbsp;";
-            palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>";
+            if (palavraSecretaSorteada[i] === " ") {
+                listaDinamica[i] = " ";
+                palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letrasEspaco'>" + listaDinamica[i] + "</div>";
+            } else {
+                listaDinamica[i] = "&nbsp;";
+                palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>";
+            }
         } else {
-            palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>";
+            if (palavraSecretaSorteada[i] === " ") {
+                listaDinamica[i] = " ";
+                palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letrasEspaco'>" + listaDinamica[i] + "</div>";
+            } else {
+                palavraTela.innerHTML = palavraTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>";
+            }
         }
     }
 }
