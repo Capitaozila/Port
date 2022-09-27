@@ -279,6 +279,10 @@ function comparaLista(letra) {
     if (position < 0) {
         tentativas--;
         carregaImagemForca();
+
+        if (tentativas === 0){
+            abreModal();
+        }
     } else {
         for (let i = 0; i < palavraSecretaSorteada.length; i++) {
             if (palavraSecretaSorteada[i] === letra) {
@@ -323,4 +327,10 @@ function carregaImagemForca() {
             document.getElementById("imagem").style.background = "url('../image/img_forca/forca.png')";
             break;
     }
+}
+
+function abreModal() {
+    $("#myModal").modal({
+        show: true
+    });
 }
