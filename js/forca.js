@@ -180,11 +180,11 @@ const palavras = [palavra001 = {
     },
 
     palavra049 = {
-        nome: "buriti", categoria: "FRUTA"
+        nome: "BURITI", categoria: "FRUTA"
     },
 
     palavra050 = {
-        nome: "cereja", categoria: "FRUTA"
+        nome: "CEREJA", categoria: "FRUTA"
     },
 
     palavra051 = {
@@ -280,8 +280,8 @@ function comparaLista(letra) {
         tentativas--;
         carregaImagemForca();
 
-        if (tentativas === 0){
-            abreModal();
+        if (tentativas === 0) {
+            abreModal("Você perdeu!", "A palavra secreta era:<br> " + palavraSecretaSorteada,);
         }
     } else {
         for (let i = 0; i < palavraSecretaSorteada.length; i++) {
@@ -300,6 +300,7 @@ function comparaLista(letra) {
 
     if (vitoria === true) {
         tentativas = 0;
+        abreModal("Você venceu!", "Parabéns, você acertou a palavra secreta!");
     }
 }
 
@@ -329,8 +330,19 @@ function carregaImagemForca() {
     }
 }
 
-function abreModal() {
+function abreModal(titulo, mensagem) {
+    let modalTitulo = document.getElementById("exampleModalLabel");
+    modalTitulo.innerText = titulo;
+
+    let modalBody = document.getElementById("modalBody");
+    modalBody.innerHTML = mensagem;
+
     $("#myModal").modal({
         show: true
     });
 }
+
+let btnReiniciar = document.querySelector("#btn-reiniciar");
+btnReiniciar.addEventListener("click", function () {
+    window.location.reload();
+});
