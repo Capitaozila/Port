@@ -303,9 +303,15 @@ function verificarLetraEscolhida(letra) {
     }
 }
 
-function mudarStyleLetra(tecla) {
-    document.getElementById(tecla).style.backgroundColor = "#c71585";
-    document.getElementById(tecla).style.color = "#fff";
+function mudarStyleLetra(tecla, condicao) {
+    if (condicao === false) {
+        document.getElementById(tecla).style.background = "#008000";
+        document.getElementById(tecla).style.color = "#fff";
+    } else {
+        document.getElementById(tecla).style.background = "#c71585";
+        document.getElementById(tecla).style.color = "#fff";
+    }
+
 }
 
 function comparaLista(letra) {
@@ -318,6 +324,7 @@ function comparaLista(letra) {
             abreModal("Você perdeu!", "A palavra secreta era:<br> " + palavraSecretaSorteada,);
         }
     } else {
+        mudarStyleLetra("tecla-" + letra, false);
         for (let i = 0; i < palavraSecretaSorteada.length; i++) {
             if (palavraSecretaSorteada[i] === letra) {
                 listaDinamica[i] = letra;
