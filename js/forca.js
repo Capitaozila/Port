@@ -26,12 +26,12 @@ const palavras = [palavra001 = {
     },
 
     palavra009 = {
-        nome: "SÃO PAULO", categoria: "LUGAR"
+        nome: "SÃOPAULO", categoria: "LUGAR"
 
     },
 
     palavra010 = {
-        nome: "RIO DE JANEIRO", categoria: "LUGAR"
+        nome: "RIODEJANEIRO", categoria: "LUGAR"
     }, palavra011 = {
         nome: "BRASILIA", categoria: "LUGAR"
     },
@@ -196,23 +196,23 @@ const palavras = [palavra001 = {
     },
 
     palavra053 = {
-        nome: "lapis", categoria: "OBJETO"
+        nome: "LAPIS", categoria: "OBJETO"
     },
 
     palavra054 = {
-        nome: "borracha", categoria: "OBJETO"
+        nome: "BORRACHA", categoria: "OBJETO"
     },
 
     palavra055 = {
-        nome: "copo", categoria: "OBJETO"
+        nome: "COPO", categoria: "OBJETO"
     },
 
     palavra056 = {
-        nome: "garrafa", categoria: "OBJETO"
+        nome: "GARRAFA", categoria: "OBJETO"
     },
 
     palavra057 = {
-        nome: "caneca", categoria: "OBJETO"
+        nome: "CANECA", categoria: "OBJETO"
     },
 
     palavra058 = {
@@ -261,6 +261,7 @@ function montarPalavraNaTela() {
 }
 
 function verificarLetraEscolhida(letra) {
+    document.getElementById("tecla-" + letra).disabled = true;
     if (tentativas > 0) {
         mudarStyleLetra("tecla-" + letra);
         comparaLista(letra);

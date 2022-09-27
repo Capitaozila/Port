@@ -63,6 +63,10 @@ body {
     color: #8b0086;
 }
 
+.teclas button:disabled {
+    cursor: not-allowed;
+}
+
 .teclas button:hover {
     transform: scale(1.3);
 }
