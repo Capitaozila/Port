@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: orange;
+    background-color: #232323;
     font-family: 'Bungee', cursive;
     width: 100%;
     height: 90vh;
@@ -36,13 +36,13 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    margin-top: 30px;
+    margin: 30px 0 30px 0;
 }
 
 .letras {
     width: 16px;
     text-align: center;
-    border-bottom: 2px solid #8b0086;
+    border-bottom: 2px solid #c51f5d;
     color: white;
     padding: 2px;
     margin: 0 2px 0 2px;
@@ -65,7 +65,7 @@ body {
     box-shadow: 0 2px 8px dimgrey;
     border-radius: 50% 50% 30% 30%;
     border: 1px solid dimgrey;
-    color: #8b0086;
+    color: #c51f5d;
 }
 
 .teclas button:disabled {
@@ -87,7 +87,7 @@ body {
 #categoria {
     margin-top: 30px;
     font-size: 1.2em;
-    color: #8b0086;
+    color: #c51f5d;
 }
 
 /* aplicando media scren */
