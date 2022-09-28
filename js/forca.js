@@ -1,3 +1,4 @@
+let jogarNovamente = true;
 let tentativas = 6;
 let listaDinamica = [];
 let palavraSecretaCategoria;
@@ -148,35 +149,35 @@ const palavras = [palavra001 = {
     },
 
     palavra041 = {
-        nome: "banana", categoria: "FRUTA"
+        nome: "BANANA", categoria: "FRUTA"
     },
 
     palavra042 = {
-        nome: "abacaxi", categoria: "FRUTA"
+        nome: "ABACAXI", categoria: "FRUTA"
     },
 
     palavra043 = {
-        nome: "abacate", categoria: "FRUTA"
+        nome: "ABACATE", categoria: "FRUTA"
     },
 
     palavra044 = {
-        nome: "acerola", categoria: "FRUTA"
+        nome: "ACEROLA", categoria: "FRUTA"
     },
 
     palavra045 = {
-        nome: "amora", categoria: "FRUTA"
+        nome: "AMORA", categoria: "FRUTA"
     },
 
     palavra046 = {
-        nome: "ameixa", categoria: "FRUTA"
+        nome: "AMEIXA", categoria: "FRUTA"
     },
 
     palavra047 = {
-        nome: "cacau", categoria: "FRUTA"
+        nome: "CACAU", categoria: "FRUTA"
     },
 
     palavra048 = {
-        nome: "goiaba", categoria: "FRUTA"
+        nome: "GOIABA", categoria: "FRUTA"
     },
 
     palavra049 = {
@@ -188,11 +189,11 @@ const palavras = [palavra001 = {
     },
 
     palavra051 = {
-        nome: "caneta", categoria: "OBJETO"
+        nome: "CANETA", categoria: "OBJETO"
     },
 
     palavra052 = {
-        nome: "caderno", categoria: "OBJETO"
+        nome: "CADERNO", categoria: "OBJETO"
     },
 
     palavra053 = {
@@ -262,7 +263,6 @@ function criarPalavraSecreta() {
     palavraSecretaSorteada = palavras[indexpalavra].nome;
     palavraSecretaCategoria = palavras[indexpalavra].categoria;
     console.log(palavraSecretaSorteada);
-    console.log(palavraSecretaCategoria);
 }
 
 montarPalavraNaTela();
@@ -322,6 +322,7 @@ function comparaLista(letra) {
 
         if (tentativas === 0) {
             abreModal("Você perdeu!", "A palavra secreta era:<br> " + palavraSecretaSorteada,);
+            piscarBotaoJogarNovamente();
         }
     } else {
         mudarStyleLetra("tecla-" + letra, false);
@@ -342,7 +343,12 @@ function comparaLista(letra) {
     if (vitoria === true) {
         tentativas = 0;
         abreModal("Você venceu!", "Parabéns, você acertou a palavra secreta!");
+        piscarBotaoJogarNovamente();
     }
+}
+
+async function atraso(tempo) {
+    return new Promise(resolve => setTimeout(resolve, tempo));
 }
 
 function carregaImagemForca() {
@@ -383,7 +389,23 @@ function abreModal(titulo, mensagem) {
     });
 }
 
+async function piscarBotaoJogarNovamente() {
+    while (jogarNovamente === true) {
+        document.getElementById("btn-reiniciar").style.backgroundColor = "yellow";
+        await atraso(500);
+        document.getElementById("btn-reiniciar").style.backgroundColor = "black";
+        await atraso(500);
+        document.getElementById("btn-reiniciar").style.backgroundColor = "white";
+        await atraso(500);
+        document.getElementById("btn-reiniciar").style.backgroundColor = "red";
+        await atraso(500);
+        document.getElementById("btn-reiniciar").style.backgroundColor = "blue";
+        await atraso(500);
+    }
+}
+
 let btnReiniciar = document.querySelector("#btn-reiniciar");
 btnReiniciar.addEventListener("click", function () {
-    window.location.reload();
+    jogarNovamente = false;
+    location.reload();
 });
