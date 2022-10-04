@@ -38,6 +38,7 @@ a {
     height: 700px;
     background: #1e2529;
     border: 1px solid #343637;
+    border-radius: 30px;
     position: relative;
     margin: auto;
     overflow: hidden;
@@ -87,7 +88,7 @@ a {
 .card-footer span {
     font-weight: bold;
     font-size: 1.2rem;
-    color: #5a6469;
+    color: #556ff7;
 }
 
 .card-footer p {
@@ -114,7 +115,7 @@ a {
 }
 
 .card:hover .read-more span {
-    transform: translateX(5px);
+    transform: translateX(50px);
 }
 
 .card:hover .image-container::before {
@@ -124,6 +125,7 @@ a {
 .card:hover .card-footer {
     background: rgb(56, 62, 58);
     color: #fff;
+    height: 100%;
 }
 
 .card:hover span {
