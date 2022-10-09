@@ -35,12 +35,12 @@ a {
 
 .card {
     max-width: 350px;
-    height: 700px;
+    height: 800px;
     background: #1e2529;
     border: 1px solid #343637;
     border-radius: 30px;
     position: relative;
-    margin: auto;
+    margin: auto auto 20px;
     overflow: hidden;
 }
 
