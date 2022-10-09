@@ -7,8 +7,9 @@
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
   <link href="../css/forca.css" media="screen" rel="stylesheet">
-  <title>Jogo da Forca</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="../image/icon-bar.png" rel="icon" type="image/png"/>
+  <title>Jogo da Forca</title>
 </head>
 <body>
 <div class="container">
@@ -78,8 +79,30 @@
       </div>
     </div>
   </div>
+  <!-- fim da modal -->
+  <!-- Modal criar palavra -->
+  <div class="modal-container" id="modal-alerta">
+    <div class="modal-add-palavra">
+      <div class="modal-header-add-palavra" id="modal-titulo">
+        <span class="close" id="fechaModal">&times;</span>
+        <h2>Adicionar Palavra</h2>
+      </div>
+      <div class="modal-body-add-palavra" id="modal-mensagem">
+        <label for="addPalavra"></label><input id="addPalavra" placeholder="Digite a nova palavra" type="password">
+        <label for="addCategoria"></label><input id="addCategoria" placeholder="Digite a nova categoria" type="text">
+        <button onclick="adicionarPalavra()">Adicionar</button>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="../js/forca.js"></script>
+
+<div id="status">Modo automático</div>
+<button id="abreModalAppPalavra"><i class="bx bx-message-square-add"></i></button>
+<img id="jogarNovamente" src="https://github.com/agnaldoguima/jogoDaForca/blob/master/img/jogarNovamente.gif?raw=true" alt="jogar novamente gif de uma mao apontando para algo">
+<button id="recarregar" onclick="sortearManual()"><i class="bx bx-refresh"></i></button>
+<button id="jogarAutomatico" onclick="listaAutomatica()"><i class="bx bx-pause-circle"></i></button>
+
 <script crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
