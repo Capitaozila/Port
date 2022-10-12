@@ -62,9 +62,9 @@ body {
 
 .teclas button {
     cursor: pointer;
-    box-shadow: 0 2px 8px dimgrey;
-    border-radius: 50% 50% 30% 30%;
-    border: 1px solid dimgrey;
+    box-shadow: 0 2px 8px black;
+    border-radius: 50%;
+    border: 1px solid black;
     color: #c51f5d;
 }
 
@@ -106,17 +106,18 @@ body {
 @media screen and (min-width: 376px) {
 
     .teclas button {
-        width: 26px;
-        height: 26px;
-        margin: 4px;
+        width: 36px;
+        height: 36px;
+        margin: 6px;
+        font-size: 1.4em;
     }
 
     #categoria {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 
     .letras {
-        width: 18px;
+        width: 28px;
 
     }
 
@@ -150,9 +151,9 @@ body {
 @media screen and (min-width: 769px) {
 
     .teclas button {
-        width: 64px;
-        height: 64px;
-        margin: 4px;
+        width: 84px;
+        height: 84px;
+        margin: 26px 26px 0 26px;
         font-size: 2em;
     }
 
