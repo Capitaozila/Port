@@ -70,7 +70,7 @@ h2::selection {
 
 .navbar.sticky {
     background: #232323;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .navbar .max-width {
@@ -81,7 +81,7 @@ h2::selection {
 
 .navbar .logo a {
     color: #fff;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .navbar .logo a span {
