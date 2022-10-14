@@ -20,7 +20,7 @@ html {
 .special-p {
     line-height: 30px;
     font-size: 20px;
-    text-align: center;
+    text-align: initial;
     color: #fff;
 }
 
@@ -278,6 +278,8 @@ section .title::after {
 /*  sessão especialidades  */
 .skills .title::after {
     content: "Aprendendo";
+    font-size: 25px;
+
 }
 
 .skills .skills-content .column {
@@ -285,7 +287,7 @@ section .title::after {
 }
 
 .skills .skills-content .left .text {
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 500;
     margin-bottom: 20px;
     color: #fff;
@@ -300,7 +302,7 @@ section .title::after {
     display: inline-block;
     background: #556ff7;
     color: #000;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
@@ -326,7 +328,7 @@ section .title::after {
 
 .skills .skills-content .right span {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 28px;
     color: #fff;
 }
 
