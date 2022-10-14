@@ -128,6 +128,10 @@ a {
     height: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 .card:hover span {
     color: #556ff7;
 }
