@@ -387,6 +387,10 @@ section .title::after {
     width: 50%;
 }
 
+.skills .skills-content .right .gms::before {
+    width: 50%;
+}
+
 /*  sessão footer  */
 footer {
     background: #111;
