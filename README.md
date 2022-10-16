@@ -1,5 +1,5 @@
 <h3 align="center">Meu primeiro projeto de site</h2>
-<img src="image/port.png">
+<img src="image/printtela.png">
 <h3 align="center">Clique<a href="https://capitaozila.github.io/Port/"> aqui</a> para abrir</h2>
 <p align="center">É um portofolio feito do que eu aprendi com o Curso de HTML5 e CSS3 do Guanabara.
 Caso queiram ver a playlist completa basta clicar<a href="https://youtu.be/Ejkb_YpuHWs"> aqui.</a> É um curso completo que vai desde o básico de como funciona a internet e como ela surgiu, até a programação web Front-End</p>
