@@ -1,7 +1,15 @@
-#modal-alerta, #status, #jogarAutomatico, #jogarAutomatico, #recarregar, #jogarNovamente{
+/*#modal-alerta, #status, #jogarAutomatico, #jogarAutomatico, #recarregar, #jogarNovamente{
     display: none;
 }
-
-#abreModalAppPalavra {
-    position: fixed;
+*/
+#abreModalAppPalavra, #recarregar, #jogarAutomatico {
+  position: fixed;
+  height: 70px;
+  border: none;
+  outline: none;
+  border-radius: 70px;
+  font-size: 3em;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
 }
