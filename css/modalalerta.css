@@ -1,7 +1,7 @@
-/*#modal-alerta, #status, #jogarAutomatico, #jogarAutomatico, #recarregar, #jogarNovamente{
-    display: none;
+#modal-alerta {
+  display: none;
 }
-*/
+
 #abreModalAppPalavra,
 #recarregar,
 #jogarAutomatico,
@@ -42,7 +42,7 @@
   user-select: none;
 }
 
-#jogarNovamente{
+#jogarNovamente {
   bottom: 15px;
   left: 89%;
 }

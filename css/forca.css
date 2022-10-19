@@ -26,6 +26,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  user-select: none;
 }
 
 #palavra-secreta {
@@ -35,7 +36,6 @@ body {
   align-items: center;
   font-size: 1em;
   margin: 30px 0 30px 0;
-  user-select: none;
 }
 
 .letras {
@@ -65,7 +65,6 @@ body {
   border-radius: 50%;
   border: 1px solid black;
   color: #c51f5d;
-  user-select: none;
 }
 
 .teclas button:disabled {
@@ -85,7 +84,6 @@ body {
 }
 
 #categoria {
-  user-select: none;
   font-size: 1.2em;
   color: #c51f5d;
 }
