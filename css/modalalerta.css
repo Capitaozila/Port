@@ -2,9 +2,12 @@
     display: none;
 }
 */
-#abreModalAppPalavra, #recarregar, #jogarAutomatico {
+#abreModalAppPalavra,
+#recarregar,
+#jogarAutomatico,
+#jogarNovamente {
   position: fixed;
-  height: 70px;
+  height: 50px;
   border: none;
   outline: none;
   border-radius: 70px;
@@ -12,19 +15,34 @@
   background-color: transparent;
   color: white;
   cursor: pointer;
+  user-select: none;
 }
 
-#abreModalAppPalavra{
+#abreModalAppPalavra {
   top: 10px;
   right: 10px;
 }
 
-#recarregar{
+#recarregar {
   top: 10px;
   right: 80px;
 }
 
-#jogarAutomatico{
+#jogarAutomatico {
   top: 10px;
   right: 150px;
+}
+
+#status {
+  position: fixed;
+  bottom: 10px;
+  left: 84%;
+  font-size: 1.1em;
+  color: white;
+  user-select: none;
+}
+
+#jogarNovamente{
+  bottom: 15px;
+  left: 89%;
 }
