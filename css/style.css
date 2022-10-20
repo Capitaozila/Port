@@ -529,6 +529,10 @@ footer span a:hover {
     padding: 20px 176px;
   }
 
+  .menu-btn, .menu {
+    display: none;
+  }
+
   .navbar.sticky {
     padding: 20px 175px;
   }
@@ -601,7 +605,7 @@ footer span a:hover {
   .navbar {
     position: fixed;
     width: 100%;
-    padding: 1px 105px;
+    padding: 1px 15px;
     font-family: "Bungee", sans-serif;
     transition: all 0.3s ease;
   }
