@@ -63,7 +63,7 @@ body {
   cursor: pointer;
   box-shadow: 0 2px 8px black;
   border-radius: 50%;
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   color: #c51f5d;
 }
 
@@ -88,10 +88,6 @@ body {
   color: #c51f5d;
 }
 
-#teclado-mobile {
-  display: none;
-}
-
 /* aplicando media scren */
 
 @media screen and (min-width: 321px) {
@@ -101,25 +97,6 @@ body {
 
   #categoria {
     font-size: 1.3em;
-    position: relative;
-    bottom: -20px;
-  }
-
-  
-
-  .teclas button {
-    /*border: 1px solid black;*/
-    width: 60px;
-    margin-left: 10px;
-  }
-
-  #teclado-mobile {
-    display: block;
-    font-size: 3.1em;
-  }
-
-  #teclado {
-    display: none;
   }
 }
 
