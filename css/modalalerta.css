@@ -68,3 +68,17 @@
     top: 130px;
   }
 }
+
+@media (min-width: 321px) {
+  #status {
+    position: relative;
+    bottom: -50px;
+    left: 28%;
+  }
+
+  #jogarNovamente {
+    position: relative;
+    bottom: 5px;
+    left: 44%;
+  }
+}
