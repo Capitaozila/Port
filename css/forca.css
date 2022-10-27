@@ -55,10 +55,6 @@ body {
   margin: 0 2px 0 2px;
 }
 
-.teclado {
-  margin-top: 30px;
-}
-
 .teclas button {
   cursor: pointer;
   box-shadow: 0 2px 8px black;
@@ -89,6 +85,23 @@ body {
 }
 
 /* aplicando media scren */
+
+@media screen and (max-width: 320px) {
+  .teclas button {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    margin: 0 18px;
+  }
+
+  .teclas {
+    font-size: 32px;
+  }
+
+  #categoria {
+    margin: 20px 0;
+  }
+}
 
 @media screen and (min-width: 320px) {
   .teclas button {

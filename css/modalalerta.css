@@ -68,3 +68,19 @@
     top: 130px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  #abreModalAppPalavra,
+  #recarregar,
+  #jogarAutomatico,
+  #jogarNovamente {
+    height: 40px;
+    font-size: 2em;
+  }
+
+  #status {
+    font-size: 1em;
+    position: relative;
+  }
+
+}
