@@ -90,9 +90,9 @@ body {
 
 /* aplicando media scren */
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 320px) {
   .teclas button {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 
   #categoria {
@@ -100,7 +100,7 @@ body {
   }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 321px) {
   .teclas button {
     width: 36px;
     height: 36px;
