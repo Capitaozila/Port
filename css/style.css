@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -529,7 +533,8 @@ footer span a:hover {
     padding: 20px 176px;
   }
 
-  .menu-btn, .menu {
+  .menu-btn,
+  .menu {
     display: none;
   }
 
@@ -625,7 +630,8 @@ footer span a:hover {
     padding: 0 0;
   }
 
-  .menu, .menu-btn {
+  .menu,
+  .menu-btn {
     display: none;
   }
 

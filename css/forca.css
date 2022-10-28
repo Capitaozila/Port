@@ -18,6 +18,7 @@ body {
   font-family: "Bungee", cursive;
   width: 100%;
   height: 90vh;
+  overflow-x: hidden;
 }
 
 .container {
