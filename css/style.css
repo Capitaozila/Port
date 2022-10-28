@@ -621,7 +621,11 @@ footer span a:hover {
 }
 
 @media (max-width: 400px) {
-  .navbar {
+  .max-width {
+    padding: 0 0;
+  }
+
+  .menu, .menu-btn {
     display: none;
   }
 
