@@ -43,11 +43,13 @@ body {
 }
 
 #jogarNovamente {
+  display: none;
   bottom: 15px;
   left: 89%;
 }
 
 .modal-container {
+  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
@@ -62,8 +64,8 @@ body {
 .modal-add-palavra {
   position: relative;
   background-color: #fefefe;
-  border: 10px solid #000;
-  border-radius: 5px;
+  border: 8px solid #000;
+  border-radius: 10px;
   text-align: center;
   margin: auto;
   padding: 0;
@@ -75,13 +77,74 @@ body {
   animation-duration: 0.4s;
 }
 
+.modal-header-add-palavra {
+  padding: 2px 16px;
+  background-color: #ffd700;
+  font-size: 1.3em;
+  border-bottom: 2px solid #000;
+}
+
+.close {
+  float: right;
+  color: #000;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-body-add-palavra {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 16px;
+}
+.modal-body-add-palavra input,
+.modal-body-add-palavra button {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.5em;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #9c9c9c;
+}
+
+.modal-add-palavra input {
+  text-transform: uppercase;
+}
+
+.modal-add-palavra button {
+  background-color: #ffd700;
+  cursor: pointer;
+}
+
+.modal-add-palavra button:hover{
+  background-color: #000;
+  color: #ffd700;
+  transition: 0.4s;
+}
 @-webkit-keyframes animacao {
-  from{top:-300px; opacity: 0;}
-  to{top:0; opacity: 1;}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 @keyframes animacao {
-  from{top:-300px; opacity: 0;}
-  to{top:0; opacity: 1;}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 600px) {
