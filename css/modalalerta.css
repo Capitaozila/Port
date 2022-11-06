@@ -2,10 +2,6 @@ body {
   overflow-y: hidden;
 }
 
-#modal-alerta {
-  display: none;
-}
-
 #abreModalAppPalavra,
 #recarregar,
 #jogarAutomatico,
@@ -49,6 +45,43 @@ body {
 #jogarNovamente {
   bottom: 15px;
   left: 89%;
+}
+
+.modal-container {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-add-palavra {
+  position: relative;
+  background-color: #fefefe;
+  border: 10px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animacao;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animacao;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animacao {
+  from{top:-300px; opacity: 0;}
+  to{top:0; opacity: 1;}
+}
+@keyframes animacao {
+  from{top:-300px; opacity: 0;}
+  to{top:0; opacity: 1;}
 }
 
 @media (max-width: 600px) {
