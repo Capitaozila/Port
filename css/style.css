@@ -631,10 +631,6 @@ footer span a:hover {
     padding: 0 0;
   }
 
-  .max-width .skills .skills-content{
-    max-width: 80%;
-  }
-
   .menu,
   .menu-btn {
     display: none;
@@ -698,5 +694,9 @@ footer span a:hover {
 
   section .title {
     font-size: 36px;
+  }
+
+  .skills .max-width {
+    padding: 0 20px;
   }
 }
