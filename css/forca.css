@@ -18,7 +18,6 @@ body {
   font-family: "Bungee", cursive;
   width: 100%;
   height: 90vh;
-  overflow-x: hidden;
 }
 
 .container {
@@ -104,22 +103,16 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .teclas button {
-    font-size: 0.6em;
-  }
-
-  #categoria {
-    font-size: 1.3em;
-  }
-}
-
 @media screen and (min-width: 321px) {
   .teclas button {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     margin: 6px;
     font-size: 1.4em;
+  }
+
+  .teclas{
+    margin-right: 18%;
   }
 
   #categoria {
@@ -162,7 +155,7 @@ body {
     margin: 10px 10px 10px 80px;
     font-size: 2em;
   }
-  
+
   #categoria {
     font-size: 2.5em;
   }
