@@ -58,9 +58,10 @@ body {
 .teclas button {
   cursor: pointer;
   box-shadow: 0 2px 8px black;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 1px solid black;
   color: #c51f5d;
+  width: 20px;
 }
 
 .teclas button:disabled {
@@ -80,7 +81,8 @@ body {
 }
 
 #categoria {
-  font-size: 1.2em;
+  margin-top: 20px;
+  font-size: 2.5em;
   color: #c51f5d;
 }
 
@@ -156,8 +158,8 @@ body {
 
 @media screen and (min-width: 769px) {
   .teclas button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 10px 10px 10px 80px;
     font-size: 2em;
   }
@@ -175,13 +177,9 @@ body {
   }
 }
 
+/* 
 @media screen and (min-width: 1024px) {
-  .teclas button {
-    width: 60px;
-    height: 60px;
-    margin: 10px 10px 10px 80px;
-    font-size: 2em;
-  }
+
 
   #categoria {
     font-size: 2.5em;
@@ -194,4 +192,4 @@ body {
   #palavra-secreta {
     font-size: 2em;
   }
-}
+} */

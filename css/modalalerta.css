@@ -30,9 +30,9 @@
 }
 
 #status {
-  position: fixed;
-  bottom: 10px;
-  left: 84%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
   font-size: 1.1em;
   color: white;
   user-select: none;
@@ -156,10 +156,6 @@
 }
 
 @media (max-width: 600px) {
-  #status {
-    bottom: 0px;
-    left: 28%;
-  }
 
   #jogarNovamente {
     left: 44%;
@@ -199,8 +195,4 @@
     font-size: 22px;
   }
 
-  #status {
-    font-size: 1em;
-    position: relative;
-  }
 }
