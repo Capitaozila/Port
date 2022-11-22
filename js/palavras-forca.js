@@ -339,6 +339,14 @@ const palavras = [
     nome: "THE FLASH",
     categoria: "SERIE",
   }),
+  (palavra086 = {
+    nome: "THE VAMPIRE DIARIES",
+    categoria: "SERIE",
+  }),
+  (palavra087 = {
+    nome: "THE ORIGINALS",
+    categoria: "SERIE",
+  }),
 ];
 
 criarPalavraSecreta();
