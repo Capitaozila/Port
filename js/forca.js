@@ -130,18 +130,28 @@ btnReiniciar.addEventListener("click", function () {
   location.reload();
 });
 
- function listaAutomatica(){ //ativa o modo manual
+function listaAutomatica() { //ativa o modo manual
   if (jogoAutomatico == true) {
-      document.getElementById("jogarAutomatico").innerHTML = "<i class='bx bx-play-circle' ></i>"
-      jogoAutomatico = false;
+    document.getElementById("jogarAutomatico").innerHTML = "<i class='bx bx-play-circle' ></i>"
+    jogoAutomatico = false;
 
-      document.getElementById("abreModalAddPalavra").style.display = "block";
+    document.getElementById("abreModalAddPalavra").style.display = "block";
+
+    document.getElementById("status").innerHTML = "Modo Manual";
   }
-  else if(jogoAutomatico == false){ //ativa o modo automático
-      document.getElementById("jogarAutomatico").innerHTML = "<i class='bx bx-pause-circle' ></i>"
-      jogoAutomatico = true;
+  else if (jogoAutomatico == false) { //ativa o modo automático
+    document.getElementById("jogarAutomatico").innerHTML = "<i class='bx bx-pause-circle' ></i>"
+    jogoAutomatico = true;
 
-      document.getElementById("abreModalAddPalavra").style.display = "none";
+    document.getElementById("abreModalAddPalavra").style.display = "none";
 
+    document.getElementById("status").innerHTML = "Modo Automático";
   }
+}
+
+const modal = document.getElementById("modal-alerta");
+const btnAbreModal = document.getElementById("abreModalAddPalavra");
+
+btnAbreModal.onclick = function(){
+  modal.style.display = "block"
 }

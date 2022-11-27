@@ -1,4 +1,4 @@
-#abreModalAppPalavra,
+#abreModalAddPalavra,
 #recarregar,
 #jogarAutomatico,
 #jogarNovamente {
@@ -15,18 +15,19 @@
 }
 
 #abreModalAddPalavra {
+  display: none;
   top: 10px;
-  right: 10px;
+  right: 150px;
 }
 
 #recarregar {
   top: 10px;
-  right: 80px;
+  right: 10px;
 }
 
 #jogarAutomatico {
   top: 10px;
-  right: 150px;
+  right: 80px;
 }
 
 #status {
@@ -117,7 +118,7 @@
   cursor: pointer;
 }
 
-.modal-add-palavra button:hover{
+.modal-add-palavra button:hover {
   background-color: #000;
   color: #ffd700;
   transition: 0.4s;
@@ -156,7 +157,6 @@
 }
 
 @media (max-width: 600px) {
-
   #jogarNovamente {
     left: 44%;
     bottom: 5px;
@@ -182,17 +182,16 @@
     font-size: 2em;
   }
 
-  .modal-add-palavra{
+  .modal-add-palavra {
     width: 80%;
     font-size: 0.5em;
   }
 
-  .modal-header-add-palavra{
+  .modal-header-add-palavra {
     font-size: 0.2em;
   }
 
-  h2{
+  h2 {
     font-size: 22px;
   }
-
 }
