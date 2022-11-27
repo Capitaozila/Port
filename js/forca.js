@@ -3,6 +3,7 @@ let tentativas = 6;
 let listaDinamica = [];
 let palavraSecretaCategoria;
 let palavraSecretaSorteada;
+let jogoAutomatico = true;
 
 function verificarLetraEscolhida(letra) {
   document.getElementById("tecla-" + letra).disabled = true;
@@ -128,3 +129,19 @@ btnReiniciar.addEventListener("click", function () {
   jogarNovamente = false;
   location.reload();
 });
+
+ function listaAutomatica(){ //ativa o modo manual
+  if (jogoAutomatico == true) {
+      document.getElementById("jogarAutomatico").innerHTML = "<i class='bx bx-play-circle' ></i>"
+      jogoAutomatico = false;
+
+      document.getElementById("abreModalAddPalavra").style.display = "block";
+  }
+  else if(jogoAutomatico == false){ //ativa o modo automático
+      document.getElementById("jogarAutomatico").innerHTML = "<i class='bx bx-pause-circle' ></i>"
+      jogoAutomatico = true;
+
+      document.getElementById("abreModalAddPalavra").style.display = "none";
+
+  }
+}
