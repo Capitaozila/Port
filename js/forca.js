@@ -150,8 +150,8 @@ function listaAutomatica() { //ativa o modo manual
 }
 
 const modal = document.getElementById("modal-alerta");
-const btnAbreModal = document.getElementById("abreModalAddPalavra");
 
 btnAbreModal.onclick = function(){
-  modal.style.display = "block"
+    modal.style.display = "block"
+    const btnAbreModal = document.getElementById("abreModalAddPalavra");
 }
