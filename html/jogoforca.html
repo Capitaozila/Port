@@ -11,7 +11,7 @@
   <link href="../css/forca.css" media="screen" rel="stylesheet" />
   <link href="../css/modalalerta.css" rel="stylesheet" />
   <link href="../image/icon-bar.png" rel="icon" type="image/png" />
-  <title>Jogo da Forca</title>
+  <title>Jogo da Forca| Luis Brasil</title>
 </head>
 
 <body>
@@ -58,7 +58,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Teste</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Mostrar o que você errou ou acertou</h5>
               <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -76,7 +76,7 @@
     <!-- fim da modal -->
 
     <!-- Modal criar palavra -->
-    <div class="modal-container" id="modal-alerta">
+    <div id="modal-alerta" class="modal-container">
       <div class="modal-add-palavra">
         <div class="modal-header-add-palavra" id="modal-titulo">
           <span class="close" id="fechaModal">&times;</span>
@@ -91,8 +91,6 @@
       </div>
     </div>
   </div>
-  <script src="../js/forca.js"></script>
-  <script src="../js/palavras-forca.js"></script>
 
   <div id="status">Modo automático</div>
   <button id="abreModalAddPalavra">
@@ -106,7 +104,9 @@
   <button id="jogarAutomatico" onclick="listaAutomatica()">
     <i class="bx bx-pause-circle"></i>
   </button>
-
+  
+  <script src="../js/forca.js"></script>
+  <script src="../js/palavras-forca.js"></script>
   <script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
