@@ -573,6 +573,10 @@ footer span a:hover {
         padding: 0;
     }
 
+    .home-content {
+        display: none;
+    }
+
     .ul menu {
         display: none;
     }
