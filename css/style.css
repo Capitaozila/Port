@@ -446,7 +446,6 @@ footer span a:hover {
     background-color: green;
   }
 }
-
 @media (max-width: 947px) {
   .max-width {
     max-width: 800px;
@@ -456,6 +455,19 @@ footer span a:hover {
   .menu-btn {
     display: block;
     z-index: 999;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1px 15px;
+    font-family: "Bungee", sans-serif;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.sticky {
+    background: #232323;
+    padding: 15px 0;
   }
 
   .navbar .menu {
@@ -518,8 +530,8 @@ footer span a:hover {
     margin-bottom: 35px;
   }
 
-  footer {
-    margin-top: 15px;
+  footer span {
+    tab-size: 20px;
   }
 }
 
@@ -571,30 +583,6 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
-  .home .home-content .text-2 {
-    font-size: 30px;
-    padding: 0;
-  }
-
-  .home-content {
-    display: none;
-  }
-
-  .ul menu {
-    display: none;
-  }
-
-  .home .max-width {
-    margin-left: 0;
-  }
-
-  .home .home-content .text-1,
-  .home .home-content .text-2,
-  .home .home-content .text-3 {
-    font-size: 25px;
-    margin-left: auto;
-  }
-
   .home {
     display: flex;
     background: url(../image/banner-mobile.jpg) no-repeat center;
@@ -608,6 +596,29 @@ footer span a:hover {
   .max-width {
     max-width: 900px;
     text-align: center;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .home .home-content .text-1,
+  .home .home-content .text-2,
+  .home .home-content .text-3,
+  .home .home-content .text-2 {
+    font-size: 25px;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .home .home-content {
+    display: none;
+  }
+
+  .ul.menu {
+    display: none;
+  }
+
+  .home .max-width {
+    margin-left: 0;
   }
 
   .special-p {
@@ -615,6 +626,7 @@ footer span a:hover {
     font-size: 20px;
     text-align: center;
     color: #fff;
+    margin: 20px 0;
   }
 
   .navbar {
@@ -623,18 +635,40 @@ footer span a:hover {
     padding: 1px 15px;
     font-family: "Bungee", sans-serif;
     transition: all 0.3s ease;
+    padding: 15px 0;
   }
 
   .navbar.sticky {
     background: #232323;
-    padding: 15px 0;
+  }
+
+  .navbar .logo {
+    align-items: center;
+  }
+
+  .about .title::after {
+    font-size: 16px;
+  }
+
+  .about .about-content .left img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .about .about-content .right p {
+    font-size: 16px;
+  }
+
+  section .title {
+    font-size: 36px;
   }
 
   footer span {
     tab-size: 20px;
   }
 }
-
 @media (max-width: 400px) {
   .max-width {
     padding: 0;
