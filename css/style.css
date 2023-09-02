@@ -379,28 +379,28 @@ footer {
   width: 52%;
 }
 
-.skills .skills-content .right .matematica::before {
-  width: 70%;
+.skills .skills-content .right .ingles::before {
+  width: 82%;
 }
 
 .skills .skills-content .right .fisic::before {
   width: 70%;
 }
 
-.skills .skills-content .right .circuito::before {
+.skills .skills-content .right .python::before {
   width: 90%;
 }
 
-.skills .skills-content .right .ingles::before {
+.skills .skills-content .right .javascript::before {
   width: 80%;
 }
 
-.skills .skills-content .right .python::before {
+.skills .skills-content .right .circuito::before {
   width: 50%;
 }
 
 .skills .skills-content .right .gms::before {
-  width: 50%;
+  width: 60%;
 }
 
 /*  sessão footer  */
