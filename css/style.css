@@ -360,35 +360,35 @@ footer {
 }
 
 .skills .skills-content .right .html::before {
-  width: 99%;
+  width: 100%;
 }
 
 .skills .skills-content .right .css::before {
-  width: 99%;
+  width: 100%;
 }
 
 .skills .skills-content .right .js::before {
-  width: 34%;
+  width: 100%;
 }
 
 .skills .skills-content .right .sass::before {
-  width: 47%;
+  width: 100%;
 }
 
 .skills .skills-content .right .game::before {
-  width: 52%;
+  width: 100%;
 }
 
 .skills .skills-content .right .ingles::before {
-  width: 82%;
+  width: 100%;
 }
 
 .skills .skills-content .right .fisic::before {
-  width: 70%;
+  width: 100%;
 }
 
 .skills .skills-content .right .python::before {
-  width: 90%;
+  width: 100%;
 }
 
 .skills .skills-content .right .javascript::before {
