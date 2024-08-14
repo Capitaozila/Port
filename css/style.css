@@ -1,4 +1,4 @@
-/* Fonts */
+/* Importação de fontes */
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Nunito+Sans&display=swap");
 
 /* Reset */
@@ -32,7 +32,7 @@ body {
   transform: translateX(0);
 }
 
-/* Typography */
+/* Tipografia */
 .special-p {
   line-height: 1.5;
   font-size: 20px;
@@ -40,7 +40,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
-/* Scrollbar */
+/* Barra de rolagem */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -53,10 +53,9 @@ body {
 
 ::-webkit-scrollbar-track {
   background: #232323;
-  border-radius: 0;
 }
 
-/* Selection */
+/* Seleção de texto */
 ::selection {
   background: #556ff7;
   color: #fff;
@@ -122,7 +121,7 @@ h2::selection {
   color: #fff;
 }
 
-/*  Home   inicio  */
+/* Home */
 .home {
   display: flex;
   background: url(../image/banner.png) no-repeat;
@@ -137,17 +136,17 @@ h2::selection {
   margin-left: 40px;
 }
 
-.home .home-content .text-1 {
+.home .home-content .text-1,
+.home .home-content .text-2,
+.home .home-content .text-3 {
   font-size: 40px;
 }
 
 .home .home-content .text-2 {
   font-family: "Bungee", sans-serif;
-  font-size: 40px;
 }
 
 .home .home-content .text-3 {
-  font-size: 40px;
   margin: 5px 0;
 }
 
@@ -172,7 +171,7 @@ h2::selection {
   background: none;
 }
 
-/*  todos os codigos similares  */
+/* Seções */
 section {
   padding: 100px 0;
   background-color: #0a0d14;
@@ -189,7 +188,6 @@ section .title {
   position: relative;
 }
 
-/* é uma embaixo do titulo, branca e larga localizada no centro*/
 section .title::before {
   content: "";
   position: absolute;
@@ -226,8 +224,7 @@ footer {
   justify-content: space-between;
 }
 
-/*  sessão sobre  */
-
+/* Sessão Sobre */
 .about .title::after {
   content: "Quem sou eu";
 }
@@ -284,13 +281,12 @@ footer {
   color: #556ff7;
 }
 
-/*  sessão projetos  */
+/* Sessão Projetos */
 .projetos .title::after {
   content: "Já feitos";
 }
 
-
-/*  sessão footer  */
+/* Footer */
 footer {
   background: #111;
   font-size: 16px;
@@ -308,7 +304,7 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-/*  responsivo  */
+/* Responsivo */
 @media (max-width: 1300px) {
   .navbar .max-width {
     margin-left: 0;
@@ -329,10 +325,9 @@ footer span a:hover {
 
   .navbar .max-width .menu ul {
     display: none;
-    color: green;
-    background-color: green;
   }
 }
+
 @media (max-width: 947px) {
   .max-width {
     max-width: 800px;
@@ -345,15 +340,10 @@ footer span a:hover {
   }
 
   .navbar {
-    position: fixed;
-    width: 100%;
     padding: 1px 15px;
-    font-family: "Bungee", sans-serif;
-    transition: all 0.3s ease;
   }
 
   .navbar.sticky {
-    background: #232323;
     padding: 15px 0;
   }
 
@@ -403,72 +393,7 @@ footer span a:hover {
   .about .about-content .left {
     display: flex;
     justify-content: center;
-    margin: 0 auto 60px;    /* Adicionar media queries no style.css */
-    
-    /* Para telas menores que 1104px */
-    @media (max-width: 1104px) {
-      .max-width {
-        padding: 0 50px;
-      }
-      .navbar .menu {
-        display: none;
-      }
-      .menu-btn {
-        display: block;
-      }
-      .home .home-content .text-2 {
-        font-size: 70px;
-      }
-      .about .about-content .left img {
-        width: 350px;
-        height: 350px;
-      }
-    }
-    
-    /* Para telas menores que 768px */
-    @media (max-width: 768px) {
-      .max-width {
-        padding: 0 30px;
-      }
-      .home .home-content .text-2 {
-        font-size: 50px;
-      }
-      .about .about-content .left img {
-        width: 300px;
-        height: 300px;
-      }
-      .about .about-content .right {
-        width: 100%;
-        text-align: center;
-      }
-      .about .about-content .right .text {
-        font-size: 20px;
-      }
-    }
-    
-    /* Para telas menores que 500px */
-    @media (max-width: 500px) {
-      .max-width {
-        padding: 0 15px;
-      }
-      .home .home-content .text-2 {
-        font-size: 30px;
-      }
-      .home .home-content .text-3 {
-        font-size: 20px;
-      }
-      .about .about-content .left img {
-        width: 250px;
-        height: 250px;
-      }
-      .navbar .menu li a {
-        display: none;
-      }
-      .home {
-        background: url(../image/banner-mobile.jpg) no-repeat center;
-        background-size: cover;
-      }
-    }
+    margin: 0 auto 60px;
   }
 
   .about .about-content .right {
@@ -488,14 +413,10 @@ footer span a:hover {
 
 @media (max-width: 690px) {
   .home {
-    display: flex;
-    background: url(../image/banner.png) no-repeat;
-    color: #fff;
     text-align: center;
   }
 
   .navbar {
-    max-width: 100%;
     padding: 20px 176px;
   }
 
@@ -516,16 +437,13 @@ footer span a:hover {
     text-align: center;
   }
 
-  .home .home-content .text-1 {
+  .home .home-content .text-1,
+  .home .home-content .text-3 {
     font-size: 40px;
   }
 
   .home .home-content .text-2 {
     font-size: 30px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 40px;
   }
 
   .home .home-content a {
@@ -563,13 +481,8 @@ footer span a:hover {
   }
 
   .home {
-    display: flex;
     background: url(../image/banner-mobile.jpg) no-repeat center;
     background-size: cover;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    font-family: "Ubuntu", sans-serif;
   }
 
   .max-width {
@@ -581,19 +494,13 @@ footer span a:hover {
     line-height: 30px;
     font-size: 20px;
     text-align: center;
-    color: #fff;
   }
 
   .navbar {
-    position: fixed;
-    width: 100%;
     padding: 1px 15px;
-    font-family: "Bungee", sans-serif;
-    transition: all 0.3s ease;
   }
 
   .navbar.sticky {
-    background: #232323;
     padding: 15px 0;
   }
 
