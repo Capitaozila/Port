@@ -166,6 +166,7 @@ a {
   position: relative;
   overflow: hidden;
   transition: all 0.2s;
+  user-select: none;
 }
 
 .card img {
