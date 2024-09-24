@@ -38,6 +38,7 @@ body {
   font-size: 20px;
   color: #fff;
   font-family: "Nunito Sans", sans-serif;
+  text-indent: 2em;
 }
 
 /* Barra de rolagem */
@@ -224,10 +225,6 @@ footer {
   justify-content: space-between;
 }
 
-/* Sessão Sobre */
-.about .title::after {
-  content: "Quem sou eu";
-}
 
 .about .about-content .left {
   width: 45%;
@@ -281,10 +278,6 @@ footer {
   color: #556ff7;
 }
 
-/* Sessão Projetos */
-.projetos .title::after {
-  content: "Já feitos";
-}
 
 /* Footer */
 footer {
